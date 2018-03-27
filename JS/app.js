@@ -38,6 +38,7 @@ function getForecast(data){
 
 
 	$('#weather').text(data.weather["0"].description)
+
 }
 
 
