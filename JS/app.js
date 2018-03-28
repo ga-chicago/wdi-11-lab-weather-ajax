@@ -32,9 +32,11 @@ function getForecast(data){
 	$('#city').text(data.name)
 	console.log(data.main.temp_max);
 
-	$('#high').text(convertTemp(data.main.temp_max)+ ' F')
 
-	$('#low').text(convertTemp(data.main.temp_min) +' F') 
+
+	$('#high').text('High: ' + convertTemp(data.main.temp_max)+ ' F')
+
+	$('#low').text('Low: ' + convertTemp(data.main.temp_min) +' F') 
 
 
 	$('#weather').text(data.weather["0"].description)
